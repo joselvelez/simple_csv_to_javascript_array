@@ -8,6 +8,6 @@ with open('data.csv', 'r') as f:
     for row in reader:
         animal = row[0]
         classification = row[1]
-        line = "['{}', '{}'],\n".format(classification, animal)
+        line = "['{}', '{}'],\n".format(animal, classification)
         outfile.write(line)
 outfile.close()
